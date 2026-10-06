@@ -1,0 +1,37 @@
+{
+  "model": "Seedance 2.0 (ByteDance)",
+  "settings": {
+    "duration_seconds": 4,
+    "aspect_ratio": "16:9",
+    "resolution": "720p or higher",
+    "generate_audio": false
+  },
+  "shared_style": "Architectural interior film, editorial interior design photography, slow smooth cinematic camera move, no people, no text, no logos.",
+  "spaces": [
+    {
+      "id": "cafe",
+      "label": "카페",
+      "prompt": "Architectural interior film of a minimalist specialty coffee cafe. Warm oak counter, travertine stone bar, a single espresso machine with gentle steam rising, ceramic cups, large window with soft morning sunlight casting long shadows across a limestone floor. Muted beige, cream and warm wood palette. Slow, smooth cinematic dolly forward toward the counter. Editorial interior design photography, calm, no people, no text, no logos."
+    },
+    {
+      "id": "salon",
+      "label": "미용실",
+      "prompt": "Architectural interior film of a calm, high-end hair salon. Row of round arched mirrors with soft halo lighting, sage green velvet styling chairs, brushed brass fixtures, warm plaster walls, a potted olive tree. Soft diffused daylight. Slow, smooth lateral camera slide along the mirrors. Editorial interior design photography, serene, no people, no text, no logos."
+    },
+    {
+      "id": "nail",
+      "label": "네일샵",
+      "prompt": "Architectural interior film of a boutique nail studio. Curved blush-pink terrazzo manicure table, soft pastel upholstered chairs, rounded white walls, glass shelves of neatly arranged nail polish bottles glowing in soft light, sheer curtains moving slightly. Dusty pink, ivory and pearl palette. Slow, smooth camera push-in. Editorial interior design photography, delicate, no people, no text, no logos."
+    },
+    {
+      "id": "office",
+      "label": "오피스",
+      "prompt": "Architectural interior film of a modern creative office. Long white oak shared desk, Scandinavian chairs, exposed concrete ceiling, floor-to-ceiling glass with city view, indoor plants, linear pendant lights, afternoon sunlight. Neutral grey, white and natural wood palette with deep green plants. Slow, smooth cinematic crane rising up. Editorial interior design photography, focused and bright, no people, no text, no logos."
+    },
+    {
+      "id": "restaurant",
+      "label": "음식점",
+      "prompt": "Architectural interior film of an intimate contemporary restaurant at dusk. Dark walnut tables set with linen and glassware, deep terracotta walls, warm low pendant lights, candle flames flickering, open kitchen glow in the background. Rich amber, terracotta and charcoal palette. Slow, smooth camera dolly sideways past the tables. Editorial interior design photography, moody and inviting, no people, no text, no logos."
+    }
+  ]
+}

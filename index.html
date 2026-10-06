@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLOTO — 공간을 기획하는 스튜디오</title>
+  <meta name="description" content="카페, 미용실, 네일샵, 오피스, 음식점. PLOTO는 작은 가게의 공간을 기획하고 설계합니다." />
+  <meta name="theme-color" content="#F4F1EA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="PLOTO 홈">PLOTO</a>
+    <nav class="nav__links" aria-label="주요 메뉴">
+      <a href="#about">About</a>
+      <a href="#spaces">Spaces</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav__cta">문의하기</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- 01 HERO: the floor plan draws itself as you scroll -->
+    <section class="hero" data-scroll-section="hero">
+      <div class="hero__sticky">
+        <svg class="hero__plan" viewBox="0 0 1200 700" aria-hidden="true">
+          <g class="plan plan--walls">
+            <path pathLength="1" d="M80 80 H1120 V620 H80 Z" />
+            <path pathLength="1" d="M80 330 H420 M520 330 H760 V80 M440 80 V240" />
+            <path pathLength="1" d="M760 420 V620 M420 330 V620" />
+          </g>
+          <g class="plan plan--doors">
+            <path pathLength="1" d="M420 330 A100 100 0 0 1 520 430" />
+            <path pathLength="1" d="M760 330 A90 90 0 0 0 850 420" />
+            <path pathLength="1" d="M1120 470 A80 80 0 0 0 1040 550" />
+          </g>
+          <g class="plan plan--furniture">
+            <rect pathLength="1" x="140" y="130" width="220" height="70" rx="6" />
+            <circle pathLength="1" cx="200" cy="260" r="26" />
+            <circle pathLength="1" cx="300" cy="260" r="26" />
+            <rect pathLength="1" x="820" y="140" width="240" height="120" rx="10" />
+            <rect pathLength="1" x="480" y="460" width="220" height="90" rx="45" />
+            <circle pathLength="1" cx="160" cy="470" r="44" />
+            <circle pathLength="1" cx="320" cy="530" r="44" />
+            <circle pathLength="1" cx="840" cy="530" r="40" />
+            <circle pathLength="1" cx="950" cy="530" r="40" />
+          </g>
+          <g class="plan plan--labels">
+            <text x="250" y="110">CAFE</text>
+            <text x="590" y="110">SALON</text>
+            <text x="940" y="110">NAIL</text>
+            <text x="250" y="420">DINING</text>
+            <text x="590" y="600">OFFICE</text>
+            <text x="940" y="600">LOUNGE</text>
+          </g>
+          <g class="plan plan--dims">
+            <path pathLength="1" d="M80 660 H1120 M80 650 V670 M1120 650 V670" />
+            <text x="600" y="690">12,400</text>
+          </g>
+        </svg>
+
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow">Space Planning Studio</p>
+          <h1 class="hero__title" aria-label="PLOTO">
+            <span>P</span><span>L</span><span>O</span><span>T</span><span>O</span>
+          </h1>
+          <p class="hero__lead">선 하나에서 시작해, 머물고 싶은 가게가 되기까지.</p>
+        </div>
+
+        <div class="hero__hint" aria-hidden="true">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 ABOUT: manifesto lights up word by word -->
+    <section class="about" id="about" data-scroll-section="about">
+      <div class="about__sticky">
+        <p class="eyebrow">About PLOTO</p>
+        <p class="about__text" data-words>
+          좋은 가게는 메뉴보다 먼저 공간으로 기억됩니다. PLOTO는 손님이 문을 여는 순간부터 다시 찾아오기까지의 동선을 그리고,
+          그 위에 브랜드가 머무를 자리를 만듭니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 SPACES: pinned horizontal gallery of five concepts -->
+    <section class="spaces" id="spaces" data-scroll-section="spaces">
+      <div class="spaces__sticky">
+        <div class="spaces__head">
+          <p class="eyebrow">Concept Spaces</p>
+          <ol class="spaces__index" aria-label="공간 목록">
+            <li data-index="0">Cafe</li>
+            <li data-index="1">Hair Salon</li>
+            <li data-index="2">Nail Studio</li>
+            <li data-index="3">Office</li>
+            <li data-index="4">Restaurant</li>
+          </ol>
+        </div>
+
+        <div class="spaces__track">
+          <article class="space" data-space="cafe">
+            <div class="space__media" data-media="cafe"></div>
+            <div class="space__info">
+              <span class="space__num">01</span>
+              <h2 class="space__title">Cafe<small>카페</small></h2>
+              <p class="space__concept">아침 햇살이 바 위로 길게 눕는 자리. 오크와 트래버틴으로 커피 향이 머무는 온도를 만듭니다.</p>
+              <ul class="space__tags"><li>Warm Oak</li><li>Travertine</li><li>Morning Light</li></ul>
+              <ul class="space__palette" aria-label="컬러 팔레트">
+                <li style="--c:#EADFCF"></li><li style="--c:#C9A27E"></li><li style="--c:#8A5A3B"></li><li style="--c:#3A3330"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="space" data-space="salon">
+            <div class="space__media" data-media="salon"></div>
+            <div class="space__info">
+              <span class="space__num">02</span>
+              <h2 class="space__title">Hair Salon<small>미용실</small></h2>
+              <p class="space__concept">둥근 아치 거울과 세이지 그린 체어. 머무는 시간이 길수록 편안해지는 살롱을 설계합니다.</p>
+              <ul class="space__tags"><li>Arched Mirror</li><li>Sage Velvet</li><li>Brushed Brass</li></ul>
+              <ul class="space__palette" aria-label="컬러 팔레트">
+                <li style="--c:#E3E6DA"></li><li style="--c:#A9B79F"></li><li style="--c:#5F7358"></li><li style="--c:#B8935A"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="space" data-space="nail">
+            <div class="space__media" data-media="nail"></div>
+            <div class="space__info">
+              <span class="space__num">03</span>
+              <h2 class="space__title">Nail Studio<small>네일샵</small></h2>
+              <p class="space__concept">곡선 테라조 테이블과 빛나는 컬러 선반. 손끝의 디테일이 가장 아름답게 보이는 조도를 찾습니다.</p>
+              <ul class="space__tags"><li>Terrazzo</li><li>Soft Curve</li><li>Pearl Light</li></ul>
+              <ul class="space__palette" aria-label="컬러 팔레트">
+                <li style="--c:#F4E3DE"></li><li style="--c:#E9BFC0"></li><li style="--c:#B9727A"></li><li style="--c:#FFF8F2"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="space" data-space="office">
+            <div class="space__media" data-media="office"></div>
+            <div class="space__info">
+              <span class="space__num">04</span>
+              <h2 class="space__title">Office<small>오피스</small></h2>
+              <p class="space__concept">긴 공유 테이블과 창 너머 도시. 몰입과 대화가 한 공간에서 자연스럽게 오가는 업무 환경입니다.</p>
+              <ul class="space__tags"><li>Shared Desk</li><li>Exposed Concrete</li><li>Green</li></ul>
+              <ul class="space__palette" aria-label="컬러 팔레트">
+                <li style="--c:#E1E4E6"></li><li style="--c:#B9BFC4"></li><li style="--c:#3E5560"></li><li style="--c:#4F7A55"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="space" data-space="restaurant">
+            <div class="space__media" data-media="restaurant"></div>
+            <div class="space__info">
+              <span class="space__num">05</span>
+              <h2 class="space__title">Restaurant<small>음식점</small></h2>
+              <p class="space__concept">테라코타 벽과 낮게 내려온 조명, 오픈 키친의 온기. 저녁이 길어지는 다이닝을 연출합니다.</p>
+              <ul class="space__tags"><li>Terracotta</li><li>Low Pendant</li><li>Open Kitchen</li></ul>
+              <ul class="space__palette" aria-label="컬러 팔레트">
+                <li style="--c:#5A2A20"></li><li style="--c:#C8693E"></li><li style="--c:#F2A65A"></li><li style="--c:#2B201C"></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="spaces__bar" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- 04 PROCESS: a line fills as each step comes into view -->
+    <section class="process" id="process" data-scroll-section="process">
+      <div class="process__inner">
+        <p class="eyebrow">Process</p>
+        <h2 class="section-title">한 장의 평면에서<br />문을 여는 날까지</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Plot</h3>
+            <p>상권과 현장을 읽고, 업종에 맞는 공간의 역할을 정의합니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Plan</h3>
+            <p>손님과 직원의 동선, 좌석과 작업대의 비율을 평면으로 그립니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Design</h3>
+            <p>마감재, 조명, 컬러로 브랜드의 분위기를 입힙니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Open</h3>
+            <p>시공 과정을 함께 점검하고, 오픈 이후의 공간까지 다듬습니다.</p>
+          </li>
+        </ol>
+        <div class="process__line" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- 05 MARQUEE + CONTACT -->
+    <section class="contact" id="contact" data-scroll-section="contact">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__row">
+          <span>Cafe</span><span>Hair Salon</span><span>Nail Studio</span><span>Office</span><span>Restaurant</span>
+          <span>Cafe</span><span>Hair Salon</span><span>Nail Studio</span><span>Office</span><span>Restaurant</span>
+        </div>
+      </div>
+      <div class="contact__inner">
+        <p class="eyebrow">Contact</p>
+        <h2 class="contact__title">당신의 가게,<br /><em>어떤 공간</em>이 될까요?</h2>
+        <a class="button" id="contact-link" href="#contact">프로젝트 문의하기</a>
+      </div>
+      <footer class="footer">
+        <span>© PLOTO</span>
+        <span>Space Planning Studio</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <script src="assets/media/manifest.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
