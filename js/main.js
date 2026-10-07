@@ -67,6 +67,23 @@
   const pickVideoFormat = (formats) =>
     (Array.isArray(formats) ? formats : []).find((f) => VIDEO_TYPES[f] && probe.canPlayType(VIDEO_TYPES[f])) || null;
 
+  /**
+   * Where to load a space's clip from, or null.
+   * Local optimised files win; otherwise a remote URL (e.g. the original
+   * Seedance render on Higgsfield's CDN) is used as is.
+   */
+  const videoSource = (id) => {
+    const entry = MEDIA[id];
+    if (!entry) return null;
+    const local = pickVideoFormat(entry.video);
+    if (local) return `${CONFIG.mediaDir}${id}.${local}`;
+    if (entry.url) {
+      const ext = /\.webm(\?|$)/i.test(entry.url) ? "webm" : "mp4";
+      if (probe.canPlayType(VIDEO_TYPES[ext])) return entry.url;
+    }
+    return null;
+  };
+
   const mediaFrames = $$(".space__media").map((frame) => {
     const id = frame.dataset.media;
     frame.innerHTML = window.PLOTO_SCENES[id] || "";
@@ -96,7 +113,7 @@
     }
 
     // Clip from Seedance 2.0 (optional, loaded lazily, scrubbed by scroll)
-    const video = pickVideoFormat(MEDIA[id] && MEDIA[id].video) ? document.createElement("video") : null;
+    const video = videoSource(id) ? document.createElement("video") : null;
     const state = { id, frame, layers, img, video, badge, requested: false, ready: false };
 
     if (video) {
@@ -125,7 +142,7 @@
     if (m.requested || !m.video) return;
     m.requested = true;
     m.video.preload = "auto";
-    m.video.src = `${CONFIG.mediaDir}${m.id}.${pickVideoFormat(MEDIA[m.id].video)}`;
+    m.video.src = videoSource(m.id);
     m.video.load();
   };
 

@@ -25,26 +25,28 @@ npx http-server -p 8080
 영상 스크럽(스크롤에 맞춘 재생)은 HTTP Range 요청이 필요합니다. `python3 -m http.server`는 이를 지원하지 않아 영상이 첫 프레임에 멈춥니다.
 GitHub Pages, Netlify, Vercel 같은 일반 정적 호스팅은 모두 지원합니다.
 
-## Seedance 2.0 컨셉 영상·이미지 넣기
+## Seedance 2.0 컨셉 영상
 
-지금 각 공간에는 직접 그린 SVG 컨셉 일러스트가 들어가 있습니다.
-Seedance 2.0 결과물을 넣으면 일러스트 위에 자동으로 겹쳐지고, 배지가 "Seedance 2.0"으로 바뀝니다.
+다섯 공간의 영상은 Seedance 2.0으로 생성했습니다. 1920×1080, 5초, 오디오 없음입니다.
+생성 기록과 원본 주소는 `seedance/clips.json`, 프롬프트는 `seedance/prompts.json`에 있습니다.
 
-1. `seedance/prompts.json`의 프롬프트로 다섯 개 영상을 생성합니다. 4초, 16:9, 오디오 없음, 720p 이상을 권장합니다.
-2. 파일 이름을 `cafe.mp4`, `salon.mp4`, `nail.mp4`, `office.mp4`, `restaurant.mp4`로 바꿔 한 폴더에 둡니다.
-3. 아래 스크립트를 실행합니다. ffmpeg가 필요합니다.
+지금 사이트는 Higgsfield 서버에 있는 원본 영상을 바로 불러옵니다. 영상이 준비되면 일러스트 위로 겹쳐지고, 배지가 "Seedance 2.0"으로 바뀝니다.
+
+### 영상을 사이트 안으로 가져오기 (권장)
+
+원본 영상은 스크롤 재생용으로 인코딩되지 않았고 외부 서버에 의존합니다. 아래 명령 하나로 원본을 내려받아 사이트 안에 최적화된 사본을 만듭니다. ffmpeg와 python3가 필요합니다.
 
 ```bash
-scripts/prepare-media.sh ~/Downloads/seedance
+scripts/fetch-seedance.sh
 ```
 
-스크립트는 공간마다 다음 파일을 `assets/media/`에 만듭니다.
+공간마다 다음 파일이 `assets/media/`에 생깁니다.
 
 - 스크럽용으로 다시 인코딩한 `<id>.mp4`(H.264)와 `<id>.webm`(VP9)
 - 영상 중간 프레임을 뽑은 컨셉 이미지 `<id>.jpg`
-- 어떤 파일이 있는지 사이트에 알려주는 `manifest.js`
+- 사이트가 읽는 목록 `manifest.js`. 로컬 파일이 있으면 로컬을, 없으면 원본 주소를 씁니다.
 
-일부 공간만 넣어도 됩니다. 없는 공간은 일러스트가 그대로 보입니다.
+다른 영상으로 바꾸려면 `cafe.mp4`처럼 공간 이름으로 저장한 폴더를 `scripts/prepare-media.sh <폴더>`에 넘기면 됩니다.
 
 ## 수정할 곳
 

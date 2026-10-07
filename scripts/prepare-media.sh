@@ -45,19 +45,4 @@ for id in cafe salon nail office restaurant; do
 done
 
 # Record which files exist so the site only requests real media.
-{
-  echo "// Written by scripts/prepare-media.sh — lists the Seedance 2.0 files present."
-  echo "window.PLOTO_MEDIA = {"
-  for id in cafe salon nail office restaurant; do
-    formats=()
-    [[ -f "$out/$id.webm" ]] && formats+=('"webm"')
-    [[ -f "$out/$id.mp4" ]] && formats+=('"mp4"')
-    s=false
-    [[ -f "$out/$id.jpg" ]] && s=true
-    if [[ ${#formats[@]} -gt 0 || $s == true ]]; then
-      echo "  $id: { video: [$(IFS=,; echo "${formats[*]}")], still: $s },"
-    fi
-  done
-  echo "};"
-} > "$out/manifest.js"
-echo "wrote assets/media/manifest.js"
+python3 "$root/scripts/write-manifest.py"

@@ -1,0 +1,12 @@
+{
+  "model": "seedance_2_0",
+  "settings": { "mode": "std", "resolution": "1080p", "width": 1920, "height": 1080, "duration_seconds": 5, "aspect_ratio": "16:9", "generate_audio": false },
+  "generated": "2026-10-07",
+  "clips": {
+    "cafe":       { "job_id": "83945480-4fd4-400c-89db-bdc33a2cff07", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014148_83945480-4fd4-400c-89db-bdc33a2cff07.mp4" },
+    "salon":      { "job_id": "c58aff34-b8fa-4e78-bf02-c616abd4fd15", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_c58aff34-b8fa-4e78-bf02-c616abd4fd15.mp4" },
+    "nail":       { "job_id": "9af2be34-67eb-477c-8820-e4469b2c214c", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_9af2be34-67eb-477c-8820-e4469b2c214c.mp4" },
+    "office":     { "job_id": "71b632bd-f40c-4d89-94f7-bbadb9dd5f5e", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_71b632bd-f40c-4d89-94f7-bbadb9dd5f5e.mp4" },
+    "restaurant": { "job_id": "f27049e7-3781-4742-b1cb-427f0e5d5ed7", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_f27049e7-3781-4742-b1cb-427f0e5d5ed7.mp4" }
+  }
+}
