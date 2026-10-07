@@ -69,8 +69,8 @@
 
   /**
    * Where to load a space's clip from, or null.
-   * Local optimised files win; otherwise a remote URL (e.g. the original
-   * Seedance render on Higgsfield's CDN) is used as is.
+   * Local optimised files win; otherwise a remote URL (the scroll-optimised
+   * copy hosted on Higgsfield, or the original render) is used as is.
    */
   const videoSource = (id) => {
     const entry = MEDIA[id];
@@ -107,8 +107,9 @@
       badge.textContent = "Seedance 2.0";
     });
     img.addEventListener("error", () => img.remove());
-    if (MEDIA[id] && MEDIA[id].still) {
-      img.src = `${CONFIG.mediaDir}${id}.jpg`;
+    const stillSrc = MEDIA[id] && (MEDIA[id].still ? `${CONFIG.mediaDir}${id}.jpg` : MEDIA[id].stillUrl);
+    if (stillSrc) {
+      img.src = stillSrc;
       frame.appendChild(img);
     }
 

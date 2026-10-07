@@ -3,26 +3,31 @@ window.PLOTO_MEDIA = {
   "cafe": {
     "video": [],
     "still": false,
-    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014148_83945480-4fd4-400c-89db-bdc33a2cff07.mp4"
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/247e9c4a-04b7-4b0c-8545-cd0d1d42f615.mp4",
+    "stillUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/11759a4d-f2ab-45a3-a37e-fcd234f1f3b6.jpg"
   },
   "salon": {
     "video": [],
     "still": false,
-    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_c58aff34-b8fa-4e78-bf02-c616abd4fd15.mp4"
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/f8c80a2a-7208-411e-8662-15da4bd590b0.mp4",
+    "stillUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/0941bda9-3ae3-4c4d-8368-6e938f4396c0.jpg"
   },
   "nail": {
     "video": [],
     "still": false,
-    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_9af2be34-67eb-477c-8820-e4469b2c214c.mp4"
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/7e747aed-aef8-488a-b120-a19ee6814078.mp4",
+    "stillUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/deb9da7a-4f71-4ead-a3da-29009af9fc2a.jpg"
   },
   "office": {
     "video": [],
     "still": false,
-    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_71b632bd-f40c-4d89-94f7-bbadb9dd5f5e.mp4"
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/b7fa8d70-dceb-4440-857c-ea6a82f767a5.mp4",
+    "stillUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/6a590b67-492a-468a-968f-8f817119a369.jpg"
   },
   "restaurant": {
     "video": [],
     "still": false,
-    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/hf_20261007_014147_f27049e7-3781-4742-b1cb-427f0e5d5ed7.mp4"
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/528ae053-88f9-4df7-828a-23005efb7711.mp4",
+    "stillUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3KIfiuHOfKcdvtEr1QqKswFfHY2/7680bf0f-4e9f-47e4-88a7-4651db1edae0.jpg"
   }
 };

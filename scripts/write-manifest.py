@@ -19,11 +19,16 @@ entries = {}
 for space in ["cafe", "salon", "nail", "office", "restaurant"]:
     formats = [ext for ext in ("webm", "mp4") if os.path.exists(os.path.join(media, f"{space}.{ext}"))]
     still = os.path.exists(os.path.join(media, f"{space}.jpg"))
-    url = clips.get(space, {}).get("url")
-    if formats or still or url:
+    clip = clips.get(space, {})
+    # Prefer the hosted scroll-optimised copy; fall back to the original render.
+    url = clip.get("web_video_url") or clip.get("url")
+    still_url = clip.get("web_still_url")
+    if formats or still or url or still_url:
         entry = {"video": formats, "still": still}
         if url:
             entry["url"] = url
+        if still_url:
+            entry["stillUrl"] = still_url
         entries[space] = entry
 
 with open(os.path.join(media, "manifest.js"), "w", encoding="utf-8") as f:

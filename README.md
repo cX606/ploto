@@ -30,7 +30,7 @@ GitHub Pages, Netlify, Vercel 같은 일반 정적 호스팅은 모두 지원합
 다섯 공간의 영상은 Seedance 2.0으로 생성했습니다. 1920×1080, 5초, 오디오 없음입니다.
 생성 기록과 원본 주소는 `seedance/clips.json`, 프롬프트는 `seedance/prompts.json`에 있습니다.
 
-지금 사이트는 Higgsfield 서버에 있는 원본 영상을 바로 불러옵니다. 영상이 준비되면 일러스트 위로 겹쳐지고, 배지가 "Seedance 2.0"으로 바뀝니다.
+지금 사이트는 Higgsfield 서버에 올려 둔 스크롤용 영상(1280×720, 4프레임마다 키프레임)과 컨셉 이미지를 바로 불러옵니다. 주소는 `seedance/clips.json`의 `web_video_url`, `web_still_url`에 있습니다.
 
 ### 영상을 사이트 안으로 가져오기 (권장)
 
